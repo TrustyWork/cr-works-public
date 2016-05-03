@@ -1,0 +1,16 @@
+<div class="col-md-12">
+    <h1>
+        Full blog list ( <%= list.length%> items)
+        <span class="pull-right"><a href="/product/blogger">Get script for your blogger</a></span>
+    </h1>
+    <ol>
+        <% for( var idx in list) { var item = list[ idx]; %>
+        <li>
+            <a href="<%= item.link%>">
+                <%= item.title%>
+                [<small>in: <%= item.follow.in%>, out: <%= item.follow.out%><% if( typeof category[ item.params.category] != 'undefined') { %> ,cat: <%= category[ item.params.category]%>,<% } %> lang: <%= item.params.lang%></small>]
+            </a>
+        </li>
+        <% } %>
+    </ol>
+</div>

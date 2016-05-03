@@ -1,0 +1,16 @@
+<div class="col-md-12">
+    <h1>
+        Uri in parser( <%= Object.keys( list).length%> items)
+        <span class="pull-right"><a href="/product/blogger">Get script for your blogger</a></span>
+    </h1>
+
+    <ol>
+        <% for( var uri in list) { %>
+        <li>
+            <a href="<%= uri%>">
+                <%= uri%>
+            </a>
+        </li>
+        <% } %>
+    </ol>
+</div>

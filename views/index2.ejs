@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Creative Works</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- jQuery-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- Bootstrap & Font Awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="/css/index.css">
+
+    <script src="/js/main.js"></script>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <h1>
+                        <a href="/">Creative Works</a>
+                    </h1>
+                    <a href="https://www.patreon.com/crworks" target="_blank" class="patreon">
+                        <img src="/img/patreon_1.jpg">
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="main">
+            <% for( var idx in sections) { var section = sections[ idx];;%>
+
+            <% if( section.id == 2) {%>
+
+            <section class="did-you-know">
+                <div class="container">
+                    <h1 class="col-md-12">What's New?</h1>
+                </div>
+            </section>
+            <% } %>
+
+            <section class="items-sections">
+                <div class="container">
+                    <div class="row <%= section.theme%>">
+                        <h1 class="col-md-12"><%= section.title%></h1>
+                        <% for( var idx in section.items) { var item = section.items[ idx];%>
+
+                            <div class="col-md-3 col-sm-6">
+                                <a href="<%= item.link%>">
+                                    <div class="item">
+                                        <header style="background-image: url( '<%= item.image%>')">
+
+                                            <% if( item.adult) { %>
+                                            <div class="adult">
+                                                adult content
+                                                <div class="circle">+18</div>
+                                            </div>
+                                            <% } %>
+                                        </header>
+                                        <div class="content">
+                                            <h2><%= item.title%></h2>
+                                            <%= item.content%>
+                                            <span class="details">details &raquo;</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        <% } %>
+
+                        <% if( section.items.length < 4) { %>
+
+                            <% for( var idx in section.items) { var item = section.placeholder;%>
+                            <div class="col-md-3 col-sm-6 hidden-sm hidden-xs">
+                                <a href="https://www.patreon.com/crworks">
+
+                                    <div class="item placeholder">
+                                        <header style="background-image: url( '/img/patreon_2.jpg')"></header>
+                                        <div class="content">
+                                            <h2>All for my patrons</h2>
+                                            These tools will still be written. Come to my page and vote patreon what would you like to get next.
+
+                                            <span class="details">
+                                                <i class="fa fa-plus fa-2x"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <% } %>
+
+                        <% } %>
+
+                    </div>
+                </div>
+            </section>
+            <% } %>
+
+            <section class="space-150">
+                <div class="container"></div>
+            </section>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h1 class="text-right">Creative Works</h1>
+                        <div class="row">
+                            <div class="col-lg-8 text-right visible-lg">
+                                Contact us
+                            </div>
+                            <div class="col-lg-4 col-sm-5 col-sm-offset-7 col-lg-offset-0">
+                                Email: TrustyWork@gmail.com
+                                <br>Skype: trusty.work
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 hidden-sm hidden-xs">
+                        <div>
+                            =)
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <a href="mailto:trustywork@gmail.com?Subject=questions" target="_top">(c) Trusty Work 2016</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

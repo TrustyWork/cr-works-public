@@ -1,0 +1,64 @@
+/*
+	Document   : index
+    Created on : 23.05.2013, 19:39:44
+    Author     : Alexander Litvinenko <lenDesakura@gmail.com>
+*/
+/* ==========================================================================
+   Section .central_column
+   ========================================================================== */
+/*social button*/
+#news, #social {
+	min-height: 200px;
+}
+#news {
+	text-align:justify;
+}
+#social {
+	.icon-right {
+		float:left;
+		margin:5px 0 0 20px
+	}
+	ol {
+		display:block;
+		margin-left:55px;
+	}
+	li {
+		width:25px;
+		height:25px;
+		padding:3px;
+		border:1px solid transparent;
+		display:inline-block;
+
+		a {
+			display:block;
+			height:23px;
+			width:23px;
+			paddin:1px;
+			background:url("/img/social-icon-sprite.png") no-repeat;
+			background-size:23px auto;
+		}
+
+		a.google {
+			background-position: 0 0;
+		}
+		a.twitter {
+			background-position: 0 -23px;
+		}
+		a.vkontakte {
+			background-position: 0 -46px;
+		}
+		a.facebook {
+			background-position: 0 -69px;
+		}
+	}
+	.in-game {
+
+	}
+}
+.for-adult-text {
+	padding:60px 0 0;
+	text-align: right;
+	font-size: 2.5em;
+	font-weight: bold;
+	color: rgba( 200, 200, 200, 0.2);
+}

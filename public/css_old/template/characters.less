@@ -1,0 +1,115 @@
+/*
+Document   : index
+Created on : 23.05.2013, 19:39:44
+Author     : Alexander Litvinenko <lenDesakura@gmail.com>
+*/
+/* ==========================================================================
+Section .central_column
+========================================================================== */
+.ui-avatar {
+	display: inline-block;
+	width: 150px;
+	height: 262px;
+	background: url("/img/race-of-character-sprite.jpg") no-repeat #222;
+	background-position: 0 0;
+	vertical-align: middle;
+}
+
+/*select characters*/
+#select-characters {
+	text-align: center;
+	li {
+		width: 150px;
+		height: 262px;
+		display: inline-block;
+		background-color: rgba(0, 0, 0, 0.7);
+		margin: 0 20px;
+		border: 1px dashed transparent;
+
+		div {
+			margin: 65px 10px 0;
+			line-height: 30px;
+			vertical-align: middle;
+			text-align: center;
+
+		}
+	}
+	li:not( .empty) {
+		background: url( "/img/race-of-character-sprite.jpg") no-repeat;
+
+		div {
+			background-color: rgba(0, 0, 0, 0.9);
+		}
+	}
+
+	li.empty {
+		border-color: rgba(255, 255, 255, 0.3);
+	}
+	li:hover {
+		border-color: rgba(255, 255, 255, 1);
+		cursor: pointer;
+	}
+}
+
+/*register*/
+#registration {
+
+	display: none;
+
+	.race {
+		height: 26px;
+		line-height: 26px;
+		vertical-align: middle;
+	}
+
+	.icon-left-dir,
+	.icon-right-dir {
+		font-size: 1.1em
+	}
+
+	.icon-left-dir:hover,
+	.icon-right-dir:hover {
+		cursor: pointer;
+	}
+
+	.race-name,
+	.gender {
+		display: inline-block;
+		width: 120px;
+		height: 20px;
+		overflow: hidden;
+		padding: 2px;
+		vertical-align: middle;
+	}
+
+	.race-name ol,
+	.gender ol {
+		width: 360px;
+	}
+
+	.race-name li,
+	.gender li {
+		width: 120px;
+		float: left;
+		line-height: 20px;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	.race-description {
+		height: 165px;
+		overflow: hidden;
+
+		ol {
+			width: 10000px;
+			height: 165px;
+		}
+
+		li {
+			width: 361px;
+			display: block;
+			float: left;
+		}
+	}
+
+}

@@ -1,0 +1,67 @@
+<div class="col-md-12">
+    <h2 class="media-heading">
+        How to promote a developer blog?
+    </h2>
+    <p>
+        This widget is designed to share subscribers between blogs one subject, it works without registration, just install the code on your blog.
+        The widget is optimized for Google release <a href="https://www.blogger.com/">Blogger </a>, but will work on any site with RSS format Atom.
+    <p>
+        <a href="/product/blogger/rss_widget/full_list">
+            сделано <%= follow%> переходов с нашего виджета, в <%= blogCount%> блогах
+        </a>
+</div>
+
+<div class="col-md-12">
+    <h2>How to use?</h2>
+</div>
+<div class="col-md-6">
+    <br>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vkmlujV-TvU" frameborder="0" allowfullscreen alt="How to promote a developer blog?"></iframe>
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="form-group">
+        <label for="category-input">Select category</label>
+        <select class="form-control" id="category-input">
+            <% for( var idx in category) {%>
+            <option value="<%= idx%>"><%= category[ idx]%></option>
+            <% } %>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="lang-input">Select language</label>
+        <select class="form-control" id="lang-input">
+            <option value="en">EN</option>
+            <option value="ru">RU</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="lang-input">Your script</label>
+        <textarea class="form-control" style="height: 150px" id="script-input"></textarea>
+    </div>
+</div>
+<hr>
+<div class="col-md-12">
+    <h3>Debug info</h3>
+    <table>
+        <tr>
+            <th>Last parse: </th>
+            <td><%= ( lastParse === Object( lastParse))? lastParse.toFormat( 'YYYY-MM-DD HH:MI:SS') : 'none'%></td>
+        </tr>
+        <tr>
+            <th>Uri in parser: </th>
+            <td><a href="/product/blogger/rss_widget/parser_uri">list</a></td>
+        </tr>
+        <tr>
+            <th>Candidates for deactivation: </th>
+            <td><a href="/product/blogger/rss_widget/freeloader">list</a></td>
+        </tr>
+        <tr>
+            <th>Broken uri: </th>
+            <td><a href="/product/blogger/rss_widget/parser_broken">list</a></td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,81 @@
+/*
+	Document   : index
+    Created on : 23.05.2013, 19:39:44
+    Author     : Alexander Litvinenko <lenDesakura@gmail.com>
+*/
+/* ==========================================================================
+   Author: Alexander Litvinenko <lenDesakura@gmail.com>
+   ========================================================================== */
+a {
+	color: #3399ff;
+}
+
+html  {
+	height:100%;
+	background: center center no-repeat fixed;
+	background-size:cover;
+	background-image: url("/img/bg/site.jpg");
+}
+body {
+	background: transparent !important;
+	font-family: Myriad Pro,Helvetica,Helvetica Neue,Arial;
+	font-size: 16px;
+	color: #fff;
+}
+h1 {
+	color:#cecece;
+	padding:0;
+	margin:0;
+}
+
+#wrapper {
+	background: rgba(0,0,0,0.7);
+	margin:0 auto;
+	max-width: 1200px;
+	padding: 28px;
+
+	/*nav*/
+	header {
+
+		margin:0.67em 0 0.12em;
+		border-bottom:3px double #cecece;
+
+		h1 {
+			font-weight: bold;
+		}
+
+		li {
+			display:inline-block;
+			padding:0 5px;
+			margin:2px;
+			border:1px inset #222;
+			border-radius: 3px;
+		}
+
+		a:not(.font-icon) {
+			color:#cecece;
+			text-decoration: none;
+		}
+
+		a:not(.font-icon):hover {
+			color:#fff;
+			text-decoration:underline;
+		}
+	}
+	footer {
+		height:28px;
+		background: rgba(0,0,0,0.5);
+		margin:28px -28px -28px;
+
+		a {
+			color:#cecece;
+			text-decoration: none;
+			font-size:0.8em;
+		}
+
+		a:hover {
+			color:#fff;
+			text-decoration:underline;
+		}
+	}
+}

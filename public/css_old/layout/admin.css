@@ -1,0 +1,15 @@
+/*
+	Document   : index
+    Created on : 23.05.2013, 19:39:44
+    Author     : Alexander Litvinenko <lenDesakura@gmail.com>
+*/
+/* ==========================================================================
+   Author: Alexander Litvinenko <lenDesakura@gmail.com>
+   ========================================================================== */
+html  {
+	background:#333;
+}
+
+.page {
+	padding-top: 40px;
+}

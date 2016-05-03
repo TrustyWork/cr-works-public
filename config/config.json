@@ -1,0 +1,48 @@
+{
+	"host": {
+		"main": "http://"
+		,"dev": "cr-works.net"
+	}
+	,"port": 80
+	,"session": {
+		"secret": "lm,;dfg"
+		,"key": "sid"
+		,"cookie": "sid"
+	}
+	,"mongoose": {
+		"uri": "mongodb://localhost/texic-art"
+	}
+	,"parse": {
+		"interval": 300000
+	}
+	,"translate": {
+		"list": [
+			"en"
+			,"ru"
+			,"ua"
+		]
+		,"default": "en"
+	}
+	,"product": {
+		"blogger_widget": {
+			"category": {
+				"1": "other"
+				,"2": "Games (18+)"
+				,"3": "3D works"
+				,"4": "2D works"
+				,"5": "Music"
+				,"6": "Story"
+				,"7": "Translate"
+			}
+			,"super_category": 0
+		}
+	}
+	,"rss_providers": {
+		"blogger": {
+			"host_alias": {
+				"4024831422917131975_60d293537150be48afb5343b12bb29e57c96dbef": "oldhuntergames"
+				,"5404134805564186765_2e664728512eb1915f855724b87925f9c782db44": "big-kuyash"
+			}
+		}
+	}
+}

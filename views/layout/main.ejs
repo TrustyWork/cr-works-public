@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> Creative Works<% if( title) { %> | <%= title%> <% } %></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- jQuery-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- Bootstrap & Normalize-->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="stylesheet" href="/css/layout/main.css">
+    <link rel="stylesheet" href="/css/template/<%= template %>.css">
+
+    <script src="/js/main.js"></script>
+    <script src="/js/layout/main.js"></script>
+    <script src="/js/template/<%= template %>.js"></script>
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+
+<div id="wrapper">
+    <div id="content" class="row">
+        <%- content %>
+    </div>
+    <footer class="clearfix text-center">
+        <a href="mailto:support@masters-way.sx">support@masters-way.sx</a>
+    </footer>
+</div>
+<script type="text/javascript">
+    reformal_wdg_domain    = "cr-woks";
+    reformal_wdg_mode    = 0;
+    reformal_wdg_title   = "Creative Works";
+    reformal_wdg_ltitle  = "Leave feedback";
+    reformal_wdg_lfont   = "";
+    reformal_wdg_lsize   = "";
+    reformal_wdg_color   = "#FFA000";
+    reformal_wdg_bcolor  = "#516683";
+    reformal_wdg_tcolor  = "#FFFFFF";
+    reformal_wdg_align   = "left";
+    reformal_wdg_waction = 0;
+    reformal_wdg_vcolor  = "#9FCE54";
+    reformal_wdg_cmline  = "#E0E0E0";
+    reformal_wdg_glcolor  = "#105895";
+    reformal_wdg_tbcolor  = "#FFFFFF";
+
+    reformal_wdg_bimage = "8489db229aa0a66ab6b80ebbe0bb26cd.png";
+
+</script>
+
+<!-- idea.informer.com BEGIN-->
+<script type="text/javascript" language="JavaScript" src="http://idea.informer.com/tab6.js?domain=cr-woks"></script><noscript><a href="http://cr-woks.idea.informer.com">Creative Works feedback </a> <a href="http://idea.informer.com"><img src="http://widget.idea.informer.com/tmpl/images/widget_logo.jpg" /></a></noscript>
+<!-- idea.informer.com END-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-68427279-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

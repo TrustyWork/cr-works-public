@@ -1,0 +1,15 @@
+<div class="col-md-12">
+    <h1>
+        Candidates for deactivation ( <%= list.length%> items)
+        <span class="pull-right"><a href="/product/blogger">Get script for your blogger</a></span>
+    </h1>
+    <ol>
+        <% for( var idx in list) { var item = list[ idx]; var now = new Date() %>
+        <li>
+            <a href="<%= item.params.uri%>">
+                <%= item.params.uri%> [<span title="<%= item.params.lastActive.toFormat( 'YYYY-MM-DD HH:MI:SS')%>"><%= item.params.lastActive.getDaysBetween( now)%> days</span>]
+            </a>
+        </li>
+        <% } %>
+    </ol>
+</div>

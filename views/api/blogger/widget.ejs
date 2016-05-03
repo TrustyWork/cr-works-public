@@ -1,0 +1,30 @@
+(function ( d, w) {
+
+    var div = d.getElementById( 'cr-works-widget');
+    div.className = 'blog-list-container';
+
+    div.innerHTML = ''
+        + '	<ul id="BlogList2_blogs">'
+        + ''<% for( var idx in list) { var item = list[ idx]; %>
+            + '<li style="display: block;">'
+            + '	<div class="blog-icon">'
+            + '     <img width="16" height="16" data-lateloadsrc="<%= item.favicon%>" src="<%= item.favicon%>">'
+            + '	</div>'
+            + '	<div class="blog-content">'
+            + '		<div class="blog-title">'
+            + '			<a target="_blank" href="<%= item.link%>"><%= item.title%></a>'
+            + '		</div>'
+            + '		<div class="item-content">'
+            + '			<span class="item-title">'
+            + '				<a target="_blank" href="<%= item.link%>"><%= item.post.title%></a>'
+            + '			</span>'
+            + '		</div>'
+            + '	</div>'
+            + '	<div style="clear: both;"></div>'
+            + '</li>'
+        + ''<% } %>
+        + '	</ul>'
+        + '	<br><small><a href="http://<%= hostname%>/product/blogger">get this panel</a></small>'
+
+    console.log( 'more options in <%= hostname%>');
+})( document, window);
